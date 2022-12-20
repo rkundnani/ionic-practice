@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+      <ion-title>Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-item>
+      <ion-label >Employee Id</ion-label>
+      <ion-input [(ngModel)]="email" type="text" name=id required ></ion-input>
+  
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >Password</ion-label>
+      <ion-input [(ngModel)]="password" type="text" required></ion-input>
+      
+    </ion-item>
+
+    <div *ngFor="let data of data">
+      <ng-container *ngIf="email==data.email && password==data.password">
+        <ion-button  class="ion-margin-top" style="justify-content: center; align-items: center;" type="submit" (click)="onClick(email)">
+          Signin
+        </ion-button>
+      </ng-container>
+
+      
+    </div>
+  
+  </ion-content>
+
+  
+
+

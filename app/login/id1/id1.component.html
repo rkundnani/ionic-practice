@@ -1,0 +1,36 @@
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+      <ion-title>  
+        Personal Information  
+      </ion-title>  
+    </ion-toolbar>  
+  </ion-header>  
+     
+    <ng-container *ngFor="let data of data" >
+        <ng-container *ngIf="id==data.email">
+              <ion-content>  
+                <ion-card>  
+                  <ion-list>
+                    <ion-item>Name : {{data.id}}</ion-item> 
+                    <ion-item>Name : {{data.name}}</ion-item>        
+                    <ion-item>Gmail : {{data.email}}</ion-item>          
+                    <ion-item>Description : {{data.Description}}</ion-item>         
+                          
+                  </ion-list>  
+                </ion-card>  
+              </ion-content>  
+        </ng-container>
+     </ng-container>
+        
+     
+  
+
+    
+ 
+  

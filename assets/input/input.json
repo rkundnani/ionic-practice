@@ -1,0 +1,30 @@
+[
+    {
+      "id": "1",
+      "name": "Rohit Kundnani",
+      "password": 1234,
+      "email": "rohitKundnani6@gmail.com",
+      "Description": "I am from Ulhasnagar"
+    },
+    {
+      "id": "2",
+      "name": "Mayuri Paropate",
+      "password": 1234,
+      "email": "mayuri@gmail.com",
+      "Description": "I work at Kotak Cherry"
+    },
+    {
+      "id": "3",
+      "name": "Kailas Labde",
+      "password": 1234,
+      "email": "Kailas@gmail.com",
+      "Description": "Manager at Kotak Cherry"
+    },
+    {
+      "id": "4",
+      "name": "Rahul Balimindi",
+      "password": 1234,
+      "email": "rahul@gmail.com",
+      "Description": "I am from Banglore"
+    }
+  ]

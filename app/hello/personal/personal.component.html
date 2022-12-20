@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">  
+  <ion-toolbar color="primary">  
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+    <ion-title>  
+      Personal Information  
+    </ion-title>  
+  </ion-toolbar>  
+</ion-header>  
+   
+            <ion-content>  
+              <ng-container *ngFor="let data of data" >
+                <ng-container *ngIf="id==data.email">
+                  <ion-card>
+                      
+                    <ion-list> 
+                      <ion-item>Employee ID: {{data.id}}</ion-item> 
+                      <ion-item>Name : {{data.name}}</ion-item>        
+                      <ion-item>Gmail : {{data.email}}</ion-item>          
+                      <ion-item>Description : {{data.Description}}</ion-item> 
+                      
+                      
+                            
+                    </ion-list>  
+                  </ion-card> 
+                  <ion-modal #modal trigger="open-modal" [swipeToClose]="true" [canDismiss]="canDismiss">
+                    <ng-template>
+                      <ion-header>
+                        <ion-toolbar>
+                          <ion-title>Modal</ion-title>
+                          <ion-buttons slot="end">
+                            <ion-button (click)="modal.dismiss()">Close</ion-button>
+                          </ion-buttons>
+                        </ion-toolbar>
+                      </ion-header>
+                      <ion-content class="ion-padding">
+                         <ion-button (click)="presentAlert(data.id)">Delete</ion-button>
+                         {{display}} 
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                  </ng-container>
+              </ng-container>
+              
+            </ion-content>  
+      
+      
+   
